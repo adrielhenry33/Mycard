@@ -18,19 +18,19 @@ class MyCard extends StatelessWidget {
               CircleAvatar(
                 radius: 50.0,
                 backgroundColor: Colors.teal,
-                backgroundImage: AssetImage('assets/images/img.jpg'),                  
+                backgroundImage: AssetImage('assets/images/img.jpg'),
               ),
 
               Text(
                 "Adriel Henry",
                 style: TextStyle(
-                  color: Colors.white, 
-                  fontWeight: FontWeight.bold, 
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
                   fontSize: 40.0,
-                  fontFamily: 'Pacifico'
-                ), 
+                  fontFamily: 'Pacifico',
+                ),
               ),
-              
+
               Text(
                 'Desenvolvedor Flutter',
                 style: TextStyle(
@@ -38,76 +38,58 @@ class MyCard extends StatelessWidget {
                   fontSize: 20.0,
                   fontFamily: 'Source Sans Pro',
                   color: Colors.white,
-                  letterSpacing: 2.5
+                  letterSpacing: 2.5,
+                ),
+              ),
+
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    size: 25.0,
+                    color: Colors.deepOrange,
+                  ),
+
+                  title: Text(
+                    '+55 (47) 99152 - 4058',
+                    style: TextStyle(
+                      color: Colors.deepOrange,
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ),
+
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    size: 25.0,
+                    color: Colors.deepOrange,
+                  ),
+                  
+                  title: Text(
+                    'adrielhenrydb@gmail.com',
+                    style: TextStyle(
+                      color: Colors.deepOrange,
+                      fontFamily: 'Source Sans Pro',
+                      fontWeight: FontWeight.bold,
+                      fontSize: 20.0,
+                    ),
+                  ),
                 ),
               ),
               
-              Container(
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(
-                  vertical: 10.0,
-                  horizontal: 25.0,
-                ),
-                padding: EdgeInsets.all(10.0),
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.phone,
-                      size: 25.0,
-                      color: Colors.deepOrange,
-                    ), 
-
-                    SizedBox(
-                        width: 10.0,
-                    ),
-
-                    Text(
-                      '+55 (47) 99152 - 4058', 
-                      style: TextStyle(
-                        color: Colors.deepOrange,
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0,
-                        fontWeight: FontWeight.bold
-                      )
-                    ),
-                  ],
-                ),
-              ),
-
-              Container(
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(
-                  vertical: 10.0, 
-                  horizontal: 25.0,
-                ),
-                padding: EdgeInsets.all(10.0),
-
-                child: Row(
-                  children: [
-                    Icon(
-                      Icons.email,
-                      size: 25.0,
-                      color: Colors.deepOrange,
-                    ),
-
-                    SizedBox(
-                      width: 10.0
-                    ),
-                    
-                    Text(
-                      'adrielhenrydb@gmail.com',
-                      style: TextStyle(
-                        color: Colors.deepOrange,
-                        fontFamily: 'Source Sans Pro',  
-                        fontWeight: FontWeight.bold,
-                        fontSize: 20.0
-                      ),
-                    ),
-                  ],
-                ),
-              ),
             ],
-          ) 
+          ),
         ),
       ),
     );
@@ -133,5 +115,4 @@ class Divider extends StatelessWidget {
       ),
     );
   }
-}
 */
