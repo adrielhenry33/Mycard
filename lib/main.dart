@@ -18,7 +18,7 @@ class MyCard extends StatelessWidget {
               CircleAvatar(
                 radius: 50.0,
                 backgroundColor: Colors.teal,
-                child: Image.asset('assets/images/img.jpg'),
+                backgroundImage: AssetImage('assets/images/img.jpg'),                  
               )
             ]
           ) 
