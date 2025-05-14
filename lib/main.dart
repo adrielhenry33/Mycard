@@ -19,6 +19,16 @@ class MyCard extends StatelessWidget {
                 radius: 50.0,
                 backgroundColor: Colors.teal,
                 backgroundImage: AssetImage('assets/images/img.jpg'),                  
+              ),
+
+              Text(
+                "Adriel Henry",
+                style: TextStyle(
+                  color: Colors.white, 
+                  fontWeight: FontWeight.bold, 
+                  fontSize: 40.0,
+                  fontFamily: 'Pacifico'
+                ), 
               )
             ]
           ) 
