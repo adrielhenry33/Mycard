@@ -41,26 +41,71 @@ class MyCard extends StatelessWidget {
                   letterSpacing: 2.5
                 ),
               ),
+              
               Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(
+                  vertical: 10.0,
+                  horizontal: 25.0,
+                ),
+                padding: EdgeInsets.all(10.0),
                 child: Row(
                   children: [
                     Icon(
                       Icons.phone,
                       size: 25.0,
-                      color: Colors.white,
+                      color: Colors.deepOrange,
+                    ), 
+
+                    SizedBox(
+                        width: 10.0,
                     ),
+
                     Text(
                       '+55 (47) 99152 - 4058', 
                       style: TextStyle(
-                        color: Colors.white,
+                        color: Colors.deepOrange,
                         fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0
+                        fontSize: 20.0,
+                        fontWeight: FontWeight.bold
                       )
-                        
                     ),
                   ],
                 ),
-              )
+              ),
+
+              Container(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(
+                  vertical: 10.0, 
+                  horizontal: 25.0,
+                ),
+                padding: EdgeInsets.all(10.0),
+
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.email,
+                      size: 25.0,
+                      color: Colors.deepOrange,
+                    ),
+
+                    SizedBox(
+                      width: 10.0
+                    ),
+                    
+                    Text(
+                      'adrielhenrydb@gmail.com',
+                      style: TextStyle(
+                        color: Colors.deepOrange,
+                        fontFamily: 'Source Sans Pro',  
+                        fontWeight: FontWeight.bold,
+                        fontSize: 20.0
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
           ) 
         ),
