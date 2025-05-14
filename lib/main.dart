@@ -41,6 +41,26 @@ class MyCard extends StatelessWidget {
                   letterSpacing: 2.5
                 ),
               ),
+              Container(
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.phone,
+                      size: 25.0,
+                      color: Colors.white,
+                    ),
+                    Text(
+                      '+55 (47) 99152 - 4058', 
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontFamily: 'Source Sans Pro',
+                        fontSize: 20.0
+                      )
+                        
+                    ),
+                  ],
+                ),
+              )
             ],
           ) 
         ),
